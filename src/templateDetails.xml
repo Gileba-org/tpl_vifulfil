@@ -13,4 +13,7 @@
 		<filename>index.php</filename>
 		<filename>templateDetails.xml</filename>
 	</files>
+	<folders>
+		<folder>assets</folder>
+	</folders>
 </extension>
