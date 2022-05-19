@@ -7,7 +7,7 @@
 	<authorUrl>http://www.gileba.be/</authorUrl>
 	<copyright>(c) 2022 by Gileba</copyright>
 	<license>GNU/GPL</license>
-	<version>1.0.0-dev-2</version>
+	<version>1.0.0-dev-3</version>
 	<description>Template for ViFulfil</description>
 	<files>
 		<filename>index.php</filename>
@@ -16,6 +16,12 @@
 	<folders>
 		<folder>assets</folder>
 	</folders>
+	<positions>
+		<position>offcanvas</position>
+		<position>top</position>
+		<position>content</position>
+		<position>footer</position>
+	</positions>
 	<config>
 		<fields name="params">
 			<fieldset name="global">

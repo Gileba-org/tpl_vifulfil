@@ -40,6 +40,17 @@
 		<?php } ?>
 	</head>
 	<body>
-		<p>Dit is een testzin: <?php echo $this->params->get('tagmanager'); ?></p>
+		<div class="offcanvas"><jdoc:include type="modules" name="offcanvas" /></div>
+		<div class="container">
+			<div class="top">
+				<jdoc:include type="modules" name="top" style="none" />
+			</div>
+			<div class="content">
+				<jdoc:include type="modules" name="content" style="none" />
+			</div>
+			<div class="footer">
+				<jdoc:include type="modules" name="footer" style="none" />
+			</div>
+		</div>
 	</body>
 </html>
