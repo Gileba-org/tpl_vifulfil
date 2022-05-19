@@ -7,14 +7,20 @@
 	<authorUrl>http://www.gileba.be/</authorUrl>
 	<copyright>(c) 2022 by Gileba</copyright>
 	<license>GNU/GPL</license>
-	<version>1.0.0-dev-3</version>
+	<version>1.0.0-dev-4</version>
 	<description>Template for ViFulfil</description>
 	<files>
-		<filename>index.php</filename>
 		<filename>templateDetails.xml</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
 	</files>
 	<folders>
 		<folder>assets</folder>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>js</folder>
+		<folder>less</folder>
+		<folder>vendor</folder>
 	</folders>
 	<positions>
 		<position>offcanvas</position>
