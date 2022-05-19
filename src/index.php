@@ -3,6 +3,7 @@
 
 	use \Joomla\CMS\Factory;
 
+	// Variables
 	$app = Factory::getApplication();
 	$wa = $this->getWebAssetManager();
 	$templatePath = "templates/tpl_vifulfil";
@@ -14,6 +15,12 @@
 	// Add styles
 	$wa->registerAndUseStyle('fonts', $templatePath . '/css/fonts.css');
 	$wa->registerAndUseStyle('template', $templatePath . '/css/template.css');
+
+	//jQuery
+	$wa->useScript('jquery');
+
+	// Jonsuh Hamburgers library
+	$wa->registerAndUseStyle('hamburger.style', $templatePath . '/vendor/jonsuh/hamburgers/hamburgers.css');
 ?>
 
 <!DOCTYPE html>
@@ -52,5 +59,6 @@
 				<jdoc:include type="modules" name="footer" style="none" />
 			</div>
 		</div>
+		<script src="<?php echo $templatePath; ?>/js/hamburgers.js"></script>
 	</body>
 </html>

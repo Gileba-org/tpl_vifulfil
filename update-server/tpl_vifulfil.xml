@@ -5,10 +5,10 @@
 		<description>ViFulfilment Template</description>
 		<element>tpl_vifulfil</element>
 		<type>template</type>
-		<version>1.0.0-dev-1</version>
-		<infourl title="ViFukfilment Template Package">https://github.com/Gileba-org/tpl_vifulfil/releases/tag/1.0.0-dev-1</infourl>
+		<version>1.0.0-dev-4</version>
+		<infourl title="ViFukfilment Template Package">https://github.com/Gileba-org/tpl_vifulfil/releases/tag/1.0.0-dev-4</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/Gileba-org/tpl_vifulfil/releases/download/1.0.0-dev-1/tpl_vifulfil.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/Gileba-org/tpl_vifulfil/releases/download/1.0.0-dev-4/tpl_vifulfil.zip</downloadurl>
 		</downloads>
 		<tags>
 			<tag>stable</tag>
