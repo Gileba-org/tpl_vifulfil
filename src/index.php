@@ -52,6 +52,9 @@
 			<div class="top">
 				<jdoc:include type="modules" name="top" style="none" />
 			</div>
+			<div class="messages">
+				<jdoc:include type="message" />
+			</div>
 			<div class="content">
 				<jdoc:include type="modules" name="content" style="none" />
 			</div>
