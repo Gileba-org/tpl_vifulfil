@@ -6,7 +6,7 @@
 	display: none;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: @mobile-menu-breakpoint) {
 	.top {
 		.custom.hamburger {
 			display: block;
@@ -24,6 +24,10 @@
 					background-color: @text-color;
 				}
 			}
+		}
+
+		.nav {
+			display: none;
 		}
 	}
 

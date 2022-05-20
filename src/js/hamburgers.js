@@ -1,4 +1,4 @@
-var $hamburger = jQuery(".hamburger");
+var $hamburger = jQuery("button.hamburger");
 var $offcanvas = jQuery(".offcanvas");
 
 $hamburger.on("click", function () {
