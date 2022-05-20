@@ -1,0 +1,23 @@
+.header {
+	min-height: 200px;
+	border-bottom: @primary-color 10px solid;
+	color: white;
+	overflow: hidden;
+
+	h1 {
+		padding: 200px 0 20px 40px;
+		font-weight: 500;
+		width: 45%;
+		text-shadow: 2px 1px #aaa;
+
+		@media screen and (max-width: @breakpoint-tablet) {
+			padding: 150px 0 20px 40px;
+			width: 70%;
+		}
+
+		@media screen and (max-width: @breakpoint-phone) {
+			padding: 100px 40px 20px;
+			width: 80%;
+		}
+	}
+}
