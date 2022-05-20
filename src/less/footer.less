@@ -1,0 +1,48 @@
+.footer {
+	background-color: @secondary-color;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px 20px;
+
+	.logo {
+		display: flex;
+		align-items: flex-end;
+		width: 50%;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.adress {
+		display: flex;
+		align-items: flex-end;
+		align-content: flex-end;
+		text-align: right;
+		color: white;
+		flex-wrap: wrap;
+		width: 50%;
+
+		p {
+			width: 100%;
+			line-height: 1.5em;
+
+			span {
+				font-weight: 500;
+				font-size: 1.1em;
+			}
+		}
+	}
+
+	.social {
+		display: flex;
+		width: 100%;
+		border-top: white solid 1px;
+
+		p {
+			width: 100%;
+			text-align: right;
+		}
+	}
+}

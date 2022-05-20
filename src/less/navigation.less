@@ -16,6 +16,10 @@
 			color: @text-color;
 			text-decoration: none;
 		}
+
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 
 	li::before {
@@ -24,7 +28,7 @@
 		display: inline-block; /* Needed to add space between the bullet and the text */
 		width: 1em; /* Also needed for space (tweak if needed) */
 		margin-right: 0.2em; /* Also needed for space (tweak if needed) */
-		font-size: 2em;
+		font-size: 3em;
 		vertical-align: middle;
 		text-align: right;
 	}
