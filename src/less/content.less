@@ -5,19 +5,71 @@
 	overflow: hidden;
 
 	h1 {
-		padding: 200px 0 20px 40px;
+		padding: calc(@margin * 5) 0 calc(@margin / 2) @margin;
 		font-weight: 500;
 		width: 45%;
 		text-shadow: 2px 1px #aaa;
 
 		@media screen and (max-width: @breakpoint-tablet) {
-			padding: 150px 0 20px 40px;
+			padding: calc(@margin * 4) 0 calc(@margin / 2) @margin;
 			width: 70%;
 		}
 
 		@media screen and (max-width: @breakpoint-phone) {
-			padding: 100px 40px 20px;
+			padding: calc(@margin * 2) @margin calc(@margin / 2);
 			width: 80%;
+		}
+	}
+}
+
+.moduletable.white {
+	padding: @margin calc(@margin * 4);
+
+	@media screen and (max-width: @breakpoint-phone) {
+		padding: @margin;
+	}
+
+	h2 {
+		color: @primary-color;
+		text-transform: uppercase;
+	}
+
+	.custom.white {
+		display: flex;
+		flex-wrap: nowrap;
+
+		.text {
+			width: 70%;
+			padding-right: calc(@margin * 2);
+
+			ul {
+				margin-block-start: 0;
+				padding-inline-start: 0;
+			}
+		}
+
+		.image {
+			width: 30%;
+			display: flex;
+			align-items: center;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+
+		@media screen and (max-width: @breakpoint-phone) {
+			&.mobile-image-none {
+				.text {
+					width: 100%;
+					padding-right: inherit;
+				}
+
+				.image {
+					display: none;
+				}
+			}
 		}
 	}
 }
