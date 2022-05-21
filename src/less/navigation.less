@@ -2,13 +2,11 @@
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: flex-end;
-	list-style: none; /* Remove default bullets */
 	align-items: flex-end;
 
 	li {
 		margin-right: 30px;
 		text-transform: uppercase;
-		font-weight: 500;
 		font-size: 0.75em;
 		line-height: 2em;
 
@@ -20,16 +18,10 @@
 		&:last-child {
 			margin-right: 0;
 		}
-	}
 
-	li::before {
-		content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-		color: @secondary-color; /* Change the color */
-		display: inline-block; /* Needed to add space between the bullet and the text */
-		width: 1em; /* Also needed for space (tweak if needed) */
-		margin-right: 0.2em; /* Also needed for space (tweak if needed) */
-		font-size: 3em;
-		vertical-align: middle;
-		text-align: right;
+		&::before {
+			text-align: right;
+			margin-right: 0.2em; /* Also needed for space (tweak if needed) */
+		}
 	}
 }
