@@ -38,9 +38,13 @@
 		display: flex;
 		flex-wrap: nowrap;
 
+		div:first-child {
+			padding-right: calc(@margin * 2);
+
+		}
+
 		.text {
 			width: 70%;
-			padding-right: calc(@margin * 2);
 
 			ul {
 				margin-block-start: 0;
@@ -68,6 +72,19 @@
 
 				.image {
 					display: none;
+				}
+			}
+
+			&.mobile-image-under {
+				flex-wrap: wrap;
+				.text {
+					width: 100%;
+					order: 1;
+				}
+
+				.image {
+					width: 100%;
+					order: 2;
 				}
 			}
 		}
