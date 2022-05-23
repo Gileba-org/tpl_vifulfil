@@ -22,7 +22,7 @@
 	}
 }
 
-.moduletable.white {
+.moduletable.white, .moduletable.background {
 	padding: @margin calc(@margin * 4);
 
 	@media screen and (max-width: @breakpoint-phone) {
@@ -34,7 +34,7 @@
 		text-transform: uppercase;
 	}
 
-	.custom.white {
+	.custom.white, .custom.background {
 		display: flex;
 		flex-wrap: nowrap;
 
@@ -87,6 +87,23 @@
 					order: 2;
 				}
 			}
+
+			&.mobile-image-first {
+				flex-wrap: wrap;
+				.text {
+					width: 100%;
+					order: 2;
+				}
+
+				.image {
+					width: 100%;
+					order: 1;
+				}
+			}
 		}
 	}
+}
+
+.moduletable.background {
+	background-color: @support-color;
 }
