@@ -22,7 +22,7 @@
 	}
 }
 
-.moduletable.white, .moduletable.background, .moduletable.background-image {
+.moduletable.white, .moduletable.background, .moduletable.background-image, .moduletable.dubbel {
 	h2 {
 		color: @primary-color;
 		text-transform: uppercase;
@@ -53,6 +53,50 @@
 			background-color: white;
 		}
 
+		&.tweekoloms {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto auto auto;
+			gap: 0 calc(@margin * 2);
+			grid-template-areas:
+				"Titel-1 Titel-2"
+				"Foto-1 Foto-2"
+				"Text-1 Text-2";
+			text-align: center;
+
+			.Titel-2 { grid-area: Titel-2; }
+			.Titel-1 { grid-area: Titel-1; }
+			.Foto-1 { grid-area: Foto-1; }
+			.Foto-2 { grid-area: Foto-2; }
+			.Text-1 { grid-area: Text-1; }
+			.Text-2 { grid-area: Text-2; }
+
+			h2 {
+				background-color: @primary-color;
+				color: white;
+				text-transform: uppercase;
+				padding: 1em;
+				margin-block-start: 0;
+				margin-block-end: 0;
+			}
+
+			p {
+				background-color: @support-color;
+				padding: calc(@margin / 2);
+
+				button {
+					background-color: @secondary-color;
+					color: white;
+					text-transform: uppercase;
+					border: white 2px solid;
+					border-radius: 5px;
+					font-size: 1.5em;
+					margin: calc(@margin / 2)  auto;
+					font-weight: 700;
+				}
+			}
+		}
+
 		.text {
 			ul {
 				margin-block-start: 0;
@@ -63,17 +107,13 @@
 		.image {
 			display: flex;
 			align-items: center;
-
-			img {
-				max-width: 100%;
-				height: auto;
-			}
 		}
 
 		@media screen and (max-width: @breakpoint-phone) {
 			.text, .image {
 				width: 100%;
 			}
+
 			&.mobile-image-none {
 				.text {
 					padding-right: inherit;
