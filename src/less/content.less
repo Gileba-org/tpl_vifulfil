@@ -22,25 +22,35 @@
 	}
 }
 
-.moduletable.white, .moduletable.background {
-	padding: @margin calc(@margin * 4);
-
-	@media screen and (max-width: @breakpoint-phone) {
-		padding: @margin;
-	}
-
+.moduletable.white, .moduletable.background, .moduletable.background-image {
 	h2 {
 		color: @primary-color;
 		text-transform: uppercase;
 	}
 
-	.custom.white, .custom.background {
+	.custom {
 		display: flex;
 		flex-wrap: nowrap;
+		padding: @margin calc(@margin * 3);
 
-		div:first-child {
+		@media screen and (max-width: @breakpoint-phone) {
+			padding: @margin;
+		}
+
+		&.background {
+			background-color: @support-color;
+		}
+
+		div {
+			padding: calc(@margin / 2) @margin;
+		}
+
+		div:first-child:not(:last-child) {
 			padding-right: calc(@margin * 2);
+		}
 
+		&.background-image div.text {
+			background-color: white;
 		}
 
 		.text {
@@ -102,8 +112,4 @@
 			}
 		}
 	}
-}
-
-.moduletable.background {
-	background-color: @support-color;
 }
