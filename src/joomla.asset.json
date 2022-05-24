@@ -1,0 +1,14 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "tpl_vifulfil",
+  "version": "1.0.0",
+  "description": "This file contains details of the assets used by the template Vi Fulfilment.",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+	{
+	  "name": "fontawesome",
+	  "type": "style",
+	  "uri": "system/joomla-fontawesome.min.css"
+	}
+  ]
+}
