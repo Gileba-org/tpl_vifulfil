@@ -27,6 +27,7 @@
 		<position>top</position>
 		<position>content</position>
 		<position>footer</position>
+		<position>bottom</position>
 	</positions>
 	<config>
 		<fields name="params">

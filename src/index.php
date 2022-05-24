@@ -58,8 +58,13 @@
 			<div class="content">
 				<jdoc:include type="modules" name="content" style="none" />
 			</div>
-			<div class="footer">
-				<jdoc:include type="modules" name="footer" style="none" />
+			<div class="footer-container">
+				<div class="footer">
+					<jdoc:include type="modules" name="footer" style="none" />
+				</div>
+				<div class="bottom">
+					<jdoc:include type="modules" name="bottom" style="none" />
+				</div>
 			</div>
 		</div>
 		<script src="<?php echo $templatePath; ?>/js/hamburgers.js"></script>
