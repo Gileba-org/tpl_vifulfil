@@ -32,9 +32,7 @@ if (in_array($field->btnstyle, array('gradient', 'flat')))
 
 	$styles = '
 		#cf_' . $form['id'] . ' .cf-btn:after {
-			border-radius: ' . (int) $form['params']->get('btnborderradius', '5') . 'px'.'
-		}
-	';
+			border-radius: ' . (int) $form['params']->get('btnborderradius', '5') . 'px;}';
 }
 
 if ($field->btnstyle == 'outline')
