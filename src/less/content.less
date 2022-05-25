@@ -40,7 +40,7 @@
 			padding: calc(@margin / 2) @margin;
 		}
 
-		div:first-child:not(:last-child) {
+		div:first-child:not(:last-child):not(.no-padding-right) {
 			padding-right: calc(@margin * 2);
 		}
 
@@ -147,7 +147,7 @@
 			}
 
 			&.no-padding-right {
-				padding-right: 0 !important;
+				padding-right: 0;
 			}
 		}
 
