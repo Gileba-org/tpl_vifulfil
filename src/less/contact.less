@@ -1,0 +1,50 @@
+.contact {
+	margin: @margin calc(@margin * 3);
+	border: @text-color solid 1px;
+	display: flex;
+	flex: nowrap;
+
+	.custom, .convertforms {
+		margin: @margin;
+	}
+
+	.convertforms {
+		width: 40%;
+
+		input, textarea {
+			background-color: @support-color;
+			border: none;
+			padding: 5px;
+			width: 100%;
+		}
+
+		::placeholder {
+			color: @secondary-color;
+			text-transform: uppercase;
+		}
+
+		button {
+			border: none;
+			background-color: white;
+			font-weight: 700;
+			text-transform: uppercase;
+			line-height: 3em;
+			vertical-align: bottom;
+			display: flex;
+			flex: nowrap;
+			justify-content: space-around;
+
+			&::before {
+				content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+				color: @secondary-color; /* Change the color */
+				font-size: 3em;
+				padding-right: 5px;
+				line-height: 0.9em;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+}

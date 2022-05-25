@@ -58,6 +58,9 @@
 			<div class="content">
 				<jdoc:include type="modules" name="content" style="none" />
 			</div>
+			<div class="contact">
+				<jdoc:include type="modules" name="contact" style="none" />
+			</div>
 			<div class="footer-container">
 				<div class="footer">
 					<jdoc:include type="modules" name="footer" style="none" />

@@ -26,6 +26,7 @@
 		<position>offcanvas</position>
 		<position>top</position>
 		<position>content</position>
+		<position>contact</position>
 		<position>footer</position>
 		<position>bottom</position>
 	</positions>
