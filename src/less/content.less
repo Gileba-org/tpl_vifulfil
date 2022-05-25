@@ -5,13 +5,13 @@
 	overflow: hidden;
 
 	h1 {
-		padding: calc(@margin * 5) 0 calc(@margin / 2) @margin;
+		padding: calc(@margin * 5) 0 calc(@margin / 2) calc(@margin * 2);
 		font-weight: 500;
 		width: 45%;
 		text-shadow: 2px 1px #aaa;
 
 		@media screen and (max-width: @breakpoint-tablet) {
-			padding: calc(@margin * 4) 0 calc(@margin / 2) @margin;
+			padding: calc(@margin * 4) 0 calc(@margin / 2) calc(@margin * 2);
 			width: 70%;
 		}
 
@@ -26,7 +26,7 @@
 	.custom {
 		display: flex;
 		flex-wrap: nowrap;
-		padding: @margin calc(@margin * 3);
+		padding: @margin calc(@margin * 6);
 
 		@media screen and (max-width: @breakpoint-phone) {
 			padding: @margin;
@@ -40,7 +40,7 @@
 			padding: calc(@margin / 2) @margin;
 		}
 
-		div:first-child:not(:last-child) {
+		div:first-child:not(:last-child):not(.no-padding-right) {
 			padding-right: calc(@margin * 2);
 		}
 
@@ -64,6 +64,7 @@
 					"Titel-1 Titel-2"
 					"Foto-1 Foto-2"
 					"Text-1 Text-2";
+				gap: 0 calc(@margin / 2);
 
 			}
 
@@ -87,6 +88,43 @@
 				background-color: @support-color;
 				padding: calc(@margin / 2);
 				margin-block-start: 0;
+				margin-block-end: 0;
+			}
+
+			div.Text-1 {
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				padding: calc(@margin / 2) calc(@margin / 4);
+				background-color: @support-color;
+
+				@media screen and (max-width: @breakpoint-phone) {
+					display: block;
+					padding: calc(@margin / 2);
+				}
+
+				p {
+					padding: 0 calc(@margin / 4);
+
+					&:first-child {
+						.vi-70();
+
+						@media screen and (max-width: @breakpoint-phone) {
+							width: 100%;
+						}
+					}
+
+					&:last-child {
+						display: flex;
+						align-items: center;
+						justify-items: center;
+
+						@media screen and (max-width: @breakpoint-phone) {
+							display: block;
+							margin-top: 1em;
+						}
+					}
+				}
 
 				button {
 					background-color: @secondary-color;
@@ -94,9 +132,10 @@
 					text-transform: uppercase;
 					border: white 2px solid;
 					border-radius: 5px;
-					font-size: 1.5em;
-					margin: calc(@margin / 2)  auto;
+					font-size: 1.2em;
+					padding: 5px;
 					font-weight: 700;
+					margin: 0;
 				}
 			}
 		}
@@ -106,11 +145,19 @@
 				margin-block-start: 0;
 				padding-inline-start: 0;
 			}
+
+			&.no-padding-right {
+				padding-right: 0;
+			}
 		}
 
 		.image {
 			display: flex;
 			align-items: center;
+
+			&.no-padding {
+				padding: 0;
+			}
 		}
 
 		@media screen and (max-width: @breakpoint-phone) {

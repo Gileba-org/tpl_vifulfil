@@ -1,20 +1,40 @@
 .contact {
-	margin: @margin calc(@margin * 3);
+	margin: @margin calc(@margin * 6);
 	border: @text-color solid 1px;
 	display: flex;
-	flex: nowrap;
+	flex-wrap: nowrap;
+
+	@media screen and (max-width: @breakpoint-phone) {
+		margin: @margin;
+		flex-wrap: wrap;
+	}
 
 	.custom, .convertforms {
 		margin: @margin;
+
+		@media screen and (max-width: @breakpoint-phone) {
+			width: 100%;
+			margin-bottom: calc(@margin / 2);
+		}
 	}
 
 	.convertforms {
 		width: 40%;
 
+		@media screen and (max-width: @breakpoint-phone) {
+			width: 100%;
+			margin-top: 0;
+
+			h2 {
+				display: none;
+			}
+		}
+
 		input, textarea {
 			background-color: @support-color;
 			border: none;
 			padding: 5px;
+			margin-bottom: 5px;
 			width: 100%;
 		}
 
