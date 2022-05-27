@@ -51,6 +51,12 @@
 			background-color: white;
 		}
 
+		&.no-padding-right {
+			@media screen and (min-width: @breakpoint-phone) {
+				padding-right: 0;
+			}
+		}
+
 		&.tweekoloms {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
