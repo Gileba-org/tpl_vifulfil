@@ -13,6 +13,7 @@
 	$this->setGenerator('');
 
 	// Add styles
+	$wa->registerAndUseStyle('fontawesome');
 	$wa->registerAndUseStyle('fonts', $templatePath . '/css/fonts.css');
 	$wa->registerAndUseStyle('template', $templatePath . '/css/template.css');
 
